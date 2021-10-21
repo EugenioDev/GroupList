@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: #1a2036;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-container {
+  width: 975px;
+  max-width: 100%;
+  background-color: #252b42;
+  height: 70%;
+  display: flex;
+  height: 662px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.group__menu {
+  width: 88px;
+  background-color: #1a2036;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 592px;
+  margin: auto 20px;
+  border-radius: 12px;
+}
+.group__menu img {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.group__menu img.active {
+  background-color: #252b42;
+  border-radius: 8px;
+}
+.group-body {
+  height: 592px;
+  width: 100%;
+  padding: 20px;
+}
+.group-body__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group-header-left {
+  margin-left: 10px;
+}
+.group-header-right img {
+  cursor: pointer;
+}
+
+.group-header-right img:active {
+  transform: scale(.9);
+}
+
+.group-header-right {
+  border: 3px solid #1a2036;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group-header-right img:first-child {
+  background-color: #1a2036;
+}
+.cards {
+  width: 100%;
+  height: 95%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-column {
+  width: 100%;
+  height: 90%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow-y: scroll;
+  align-items: center;
+  transition: 0.4s ease-in;
+  margin-top: 20px;
+}
+.card-column .card {
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+  margin: 0 auto;
+}
+.card-column::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  width: calc(204.504px - 10px);
+  height: 220px;
+  background-color: #1a2036;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+.card img {
+  margin-bottom: 20px;
+}
+
+.card p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+/* .vertical-layout::-webkit-scrollbar {
+  display: none;
+} */
